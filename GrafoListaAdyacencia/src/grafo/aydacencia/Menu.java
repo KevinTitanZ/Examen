@@ -22,14 +22,14 @@ public class Menu {
 	            switch (opcion) {
 	                case 1:
 	                    System.out.print("Ingrese el nombre de la ciudad: ");
-	                    scanner.nextLine(); // Consume newline left by nextInt()
+	                    scanner.nextLine(); 
 	                    String ciudad = scanner.nextLine();
 	                    grafo.agregarVertice(ciudad);
 	                    break;
 
 	                case 2:
 	                    System.out.print("Ingrese el nombre de la ciudad origen: ");
-	                    scanner.nextLine(); // Consume newline left by previous nextInt()
+	                    scanner.nextLine(); 
 	                    String origen = scanner.nextLine();
 	                    System.out.print("Ingrese el nombre de la ciudad destino: ");
 	                    String destino = scanner.nextLine();
@@ -40,12 +40,12 @@ public class Menu {
 
 	                case 3:
 	                	  System.out.print("Ingrese el nombre del vértice de inicio: ");
-	                      scanner.nextLine(); // Consume newline left by previous nextInt()
+	                      scanner.nextLine(); 
 	                      String ciudadInicio = scanner.nextLine();
 	                      VerticeAdy verticeInicio = buscarVertice(ciudadInicio, grafo.tablAdc, grafo.numVerts);
 	                      if (verticeInicio != null) {
 	                          System.out.println("Recorrido en profundidad:");
-	                          grafo.RecorridoProfundidad(verticeInicio); // Use the existing RecorridoP method
+	                          grafo.RecorridoProfundidad(verticeInicio); 
 	                          System.out.println();
 	                      } else {
 	                          System.out.println("El vértice de inicio no existe en el grafo.");
@@ -54,7 +54,7 @@ public class Menu {
 
 	                case 4:
 	                    System.out.print("Ingrese el nombre de la ciudad origen: ");
-	                    scanner.nextLine(); // Consume newline left by previous nextInt()
+	                    scanner.nextLine();
 	                    String ciudadOrigen = scanner.nextLine();
 	                    System.out.print("Ingrese el nombre de la ciudad destino: ");
 	                    String ciudadDestino = scanner.nextLine();
